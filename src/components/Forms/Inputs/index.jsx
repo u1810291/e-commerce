@@ -4,6 +4,6 @@ import { Container } from './style';
 
 export default () => (
   <Container>
-    Button
+    Input
   </Container>
 );
