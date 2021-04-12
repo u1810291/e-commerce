@@ -1,11 +1,4 @@
 {
-  "name": "e-commerce-app",
-  "short_name": "VM e-commerce",
-  "theme_color": "#006b9c",
-  "background_color": "#003f5c",
-  "display": "standalone",
-  "orientation": "portrait",
-  "start_url": ".",
   "icons": [
     {
       "src": "windows10/SmallTile.scale-100.png",
