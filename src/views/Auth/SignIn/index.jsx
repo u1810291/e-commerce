@@ -19,9 +19,9 @@ import {
   CustomLink,
   FooterText
 } from '../style';
-import { PureCheckbox } from '../../../components/CheckBox';
+import { PureCheckbox } from '../../../components/FormElements/Inputs/CheckBox';
 import { login } from '../../../redux/modules/auth/actions';
-import logo from '../../../assets/icons/logo2.svg';
+import logo from '../../../assets/images/logo2.png';
 
 export default () => {
   const history = useHistory();
