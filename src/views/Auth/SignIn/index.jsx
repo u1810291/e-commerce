@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { useHistory } from 'react-router-dom';
-import { NormalInput, PasswordInput } from '../../../components/Forms/Inputs';
+import { NormalInput, PasswordInput } from '../../../components/FormElements/Inputs';
 import { PrimaryButton } from '../../../components/Buttons';
 import {
   AuthForm,
