@@ -9,7 +9,7 @@ import {
 } from './style';
 import { useWindowSize } from '../../../hooks/use-window-size';
 import * as devices from '../../../constants/devices';
-import { ReactComponent as Logo } from '../../../assets/icons/logo3.svg';
+import Logo from '../../../assets/icons/logo3.png';
 
 const SidebarHeader = ({ collapsed, handleExpand, handleCollapse }) => {
   const history = useHistory();
