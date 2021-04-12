@@ -5,11 +5,11 @@ import classNames from 'classnames';
 import { useHistory } from 'react-router-dom';
 import auth from '../../../services/auth';
 import { PrimaryButton } from '../../../components/Buttons';
-import { NormalInput } from '../../../components/Forms/Inputs';
+import { NormalInput } from '../../../components/FormElements/Inputs';
 import {
   AuthForm, ResetPassword, TextCenter, AuthFooter, AuthHeader, AuthWrapper, Text
 } from './style';
-import dashboard from '../../../assets/images/dashboard.jpg';
+import dashboard from '../../../assets/images/login.jpg';
 
 export default () => {
   const history = useHistory();
