@@ -1,7 +1,8 @@
+/* eslint-disable no-console */
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export default () => {
+export default function Container() {
   const [state, setState] = useState();
 
   useEffect(() => {
@@ -18,4 +19,4 @@ export default () => {
       {console.log(state)}
     </div>
   );
-};
+}
