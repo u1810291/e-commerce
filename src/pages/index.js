@@ -1,14 +1,10 @@
 import React from 'react';
-import Head from 'next/head';
+import Heading from '../container/Head';
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>
-          Internet shop
-        </title>
-      </Head>
+      <Heading title="Online shopping" />
       <div>
         <h1>Hello world</h1>
       </div>
