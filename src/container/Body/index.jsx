@@ -1,5 +1,10 @@
 import React from 'react';
 
-export default function Body() {
-  return (<div>Body</div>);
+export default function Body({ children }) {
+  return (
+    <div>
+      <h2>Body</h2>
+      {children}
+    </div>
+  );
 }

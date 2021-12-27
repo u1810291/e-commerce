@@ -2,8 +2,10 @@ import React from 'react';
 
 import { Container } from './style';
 
-export default () => (
-  <Container>
-    Checkbox
-  </Container>
-);
+export default function Checkbox() {
+  return (
+    <Container>
+      Checkbox
+    </Container>
+  );
+}
