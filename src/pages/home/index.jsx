@@ -1,9 +1,9 @@
 import React from 'react';
 import { withRouter } from 'next/router';
-import Heading from '../container/Head';
-import Body from '../container/Body';
-import Footer from '../container/Footer';
-import products from '../services/products';
+import Heading from '../../container/Head';
+import Body from '../../container/Body';
+import Footer from '../../container/Footer';
+import products from '../../services/products';
 
 function Home({ data }) {
   return (
