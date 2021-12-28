@@ -2,8 +2,10 @@ import React from 'react';
 
 import { Container } from './style';
 
-export default () => (
-  <Container>
-    Button
-  </Container>
-);
+export default function PrimaryButton() {
+  return (
+    <Container>
+      Button
+    </Container>
+  );
+}
