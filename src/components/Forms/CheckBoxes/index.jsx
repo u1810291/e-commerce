@@ -6,14 +6,8 @@ import style from './style.module.scss';
 export default function Checkboxes({
   label, size, onChange
 }) {
-  const classes = {
-    small: style.v1,
-    medium: style.v2,
-    large: style.v3
-  };
-
   return (
-    <div className={classes[size]}>
+    <div className={style[size]}>
       <FormControlLabel control={<Checkbox onChange={onChange} />} label={label} />
     </div>
   );

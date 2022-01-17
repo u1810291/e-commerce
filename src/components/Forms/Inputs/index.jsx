@@ -6,11 +6,6 @@ import style from './style.module.scss';
 export default function BasicTextFields({
   size, label, type, placeholder
 }) {
-  const classes = {
-    small: style.small,
-    medium: style.medium,
-    large: style.large
-  };
   return (
     <div>
 
@@ -20,7 +15,7 @@ export default function BasicTextFields({
         noValidate
         autoComplete="off"
       >
-        <TextField className={classes[size]} id="outlined-basic" type={type} placeholder={placeholder} />
+        <TextField className={style[size]} id="outlined-basic" type={type} placeholder={placeholder} />
       </Box>
     </div>
   );

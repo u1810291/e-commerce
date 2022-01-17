@@ -14,21 +14,21 @@ $border-radius-v3: 15px;
   }
 }
 
-.v1 {
+.small {
   @include checkbox();
   border-radius: $border-radius-base;
   background-color: $base-color;
   height: 37px;
   width: 230px;
 }
-.v2 {
+.medium {
   @include checkbox();
   border-radius: $border-radius-base;
   background-color: $base-color;
   height: 42px;
   width: 240px;
 }
-.v3 {
+.large {
   @include checkbox();
   border-radius: $border-radius-v3;
   background-color: $base-color;
