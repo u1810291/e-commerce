@@ -10,8 +10,11 @@ export default function RadioButtonsGroup({
 }) {
   return (
     <div className={`${style.cont} ${style[size]}`}>
+
       <FormControlLabel control={<Radio />} label={label} />
+
       { size !== 'small' && <Children type={childText.type} price={childText.price} txt={childText.txt} />}
+
       <Image src={src} width={width} height={height} />
     </div>
   );

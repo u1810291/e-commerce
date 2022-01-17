@@ -6,6 +6,7 @@ import Container from '../../components/Container';
 import Checkboxes from '../../components/Forms/CheckBoxes';
 import Inputs from '../../components/Forms/Inputs';
 import Radios from '../../components/Forms/Radios';
+import TextAreas from '../../components/Forms/TextAreas';
 import fedEx from '../../static/assets/svg/FedEx.svg';
 import style from './style.module.scss';
 
@@ -28,6 +29,7 @@ function Home() {
           <Radios label="ME" src={fedEx} size="large" childText={{ type: 'success', price: '+25 USD', txt: 'Additional Price' }} />
           <Radios label="ME" src={fedEx} size="large" childText={{ type: 'success', price: '', txt: '' }} />
           <Radios label="ME" src={fedEx} size="small" />
+          <TextAreas label="Hello" placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..." />
         </div>
         <Container height={300} width={300} bgcolor="#cfe8fc">
           Home
