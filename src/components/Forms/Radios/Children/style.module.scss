@@ -2,40 +2,29 @@
   display: flex;
   gap: 12px;
   align-items: center;
-  width: 35%;
 }
 
-@mixin price($color) {
+@mixin childText($color) {
   color: $color;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 18px;
-  width: 35%;
 }
 
 .fail {
-  @include price(red);
+  @include childText(red);
 }
 
 .warning {
-  @include price(#ffcc00);
+  @include childText(#ffcc00);
 }
 
 .success {
-  @include price(green);
+  @include childText(green);
 }
 
 .priceLabel {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 18px;
-  color: #151515;
-  text-align: center;
-  width: 75%;
-  background: #F5F5F5;
-  border-radius: 12px;
+  @include childText(#151515);
 }
