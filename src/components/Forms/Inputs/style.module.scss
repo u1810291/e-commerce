@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+$border-color: #D1D1D1; 
+$base-color: #F9F9F9;
+
+@mixin input($border-radius) {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background-color: $base-color;
+  display: flex;
+  justify-content: center;
+  fieldset {
+    display: none;
+  }
+}
+
+.label {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.small {
+  @include input(10px);
+  width: 314px;
+  height: 37px;
+}
+
+.medium {
+  @include input(12px);
+  width: 319px;
+  height: 42px;
+}
+
+.large {
+  @include input(17px);
+  width: 324px;
+  height: 47px;
+}
