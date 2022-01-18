@@ -20,16 +20,27 @@ function Home() {
       <Heading title="Online shopping" />
       <Body>
         <div className={style.box}>
-          <Checkboxes size="small" label="Hello World!" onChange={handleOnChange} />
-          <Checkboxes size="medium" label="Hello World!" onChange={handleOnChange} />
-          <Checkboxes size="large" label="Hello World!" onChange={handleOnChange} />
-          <Inputs size="small" label="Hello" placeholder="World" />
-          <Inputs size="medium" label="Hello" placeholder="World" />
-          <Inputs size="large" label="Hello" placeholder="World" />
-          <Radios label="ME" src={fedEx} size="large" childText={{ type: 'success', price: '+25 USD', txt: 'Additional Price' }} />
-          <Radios label="ME" src={fedEx} size="large" childText={{ type: 'success', price: '', txt: '' }} />
-          <Radios label="ME" src={fedEx} size="small" />
-          <TextAreas label="Hello" placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..." />
+          <div>
+            <h1>Forms</h1>
+            <div className={style.form}>
+              <div className={style.checkbox}>
+                <Checkboxes size="small" label="Hello World!" onChange={handleOnChange} />
+                <Checkboxes size="medium" label="Hello World!" onChange={handleOnChange} />
+                <Checkboxes size="large" label="Hello World!" onChange={handleOnChange} />
+              </div>
+              <div className={style.input}>
+                <Inputs size="small" label="Hello" placeholder="World" />
+                <Inputs size="medium" label="Hello" placeholder="World" />
+                <Inputs size="large" label="Hello" placeholder="World" />
+              </div>
+              <div className={style.radio}>
+                <Radios label="ME" src={fedEx} size="large" childText={{ type: 'success', price: '+25 USD', txt: 'Additional Price' }} />
+                <Radios label="ME" src={fedEx} size="large" childText={{ type: 'success', price: '', txt: '' }} />
+                <Radios label="ME" src={fedEx} size="small" />
+              </div>
+              <TextAreas className={style.textarea} label="Hello" placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..." />
+            </div>
+          </div>
         </div>
         <Container height={300} width={300} bgcolor="#cfe8fc">
           Home
