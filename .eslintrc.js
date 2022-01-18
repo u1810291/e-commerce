@@ -16,6 +16,8 @@ module.exports = {
     'linebreak-style': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
     'no-underscore-dangle': 0,
-    'react/prop-types': 0
+    'react/prop-types': 0,
+    'react/jsx-props-no-spreading': 'off'
+
   }
 };

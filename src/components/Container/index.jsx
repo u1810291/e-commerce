@@ -1,15 +1,19 @@
-import React from 'react';
-import {
-  MobileContainer, DesktopContainer, TabletContainer, NotebookContainer
-} from './style';
-import { useWindowSize } from '../../hooks/use-window-size';
-import * as devices from '../../constants/devices';
+import * as React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 
-export default ({ children }) => {
-  const { device } = useWindowSize();
-  if (device === devices.MOBILE) return <MobileContainer>{children}</MobileContainer>;
-  if (device === devices.TABLET) return <TabletContainer>{children}</TabletContainer>;
-  if (device === devices.NOTEBOOK) return <NotebookContainer>{children}</NotebookContainer>;
-  if (device === devices.DESKTOP) return <DesktopContainer>{children}</DesktopContainer>;
-  return <></>;
-};
+export default function SimpleContainer({
+  height, width, bgcolor, children
+}) {
+  return (
+    <>
+      <CssBaseline />
+      <Container maxWidth="sm">
+        <Box sx={{ height, width, bgcolor }}>
+          {children}
+        </Box>
+      </Container>
+    </>
+  );
+}

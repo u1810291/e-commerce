@@ -1,0 +1,37 @@
+$base-color: #F9F9F9;
+$border-radius-base: 12px;
+$border-radius-v3: 15px;
+@mixin checkbox($border-color: #D1D1D1) {
+  border: 1px solid $border-color;
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  path {
+    opacity: .7;
+    stroke: white;
+    stroke-width: 1px;
+    stroke-linejoin: round;
+  }
+}
+
+.small {
+  @include checkbox();
+  border-radius: $border-radius-base;
+  background-color: $base-color;
+  height: 37px;
+  width: 230px;
+}
+.medium {
+  @include checkbox();
+  border-radius: $border-radius-base;
+  background-color: $base-color;
+  height: 42px;
+  width: 240px;
+}
+.large {
+  @include checkbox();
+  border-radius: $border-radius-v3;
+  background-color: $base-color;
+  height: 50px;
+  width: 260px;
+}

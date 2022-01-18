@@ -1,0 +1,33 @@
+.form {
+  padding: 10px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+      "checkbox input textarea"
+      "radio radio radio";
+}
+
+.checkbox {
+  grid-area: checkbox;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.input {
+  grid-area: input;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.radio {
+  grid-area: radio;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.textarea {
+  grid-area: textarea;
+  display: grid;
+  grid-gap: 10px;
+}

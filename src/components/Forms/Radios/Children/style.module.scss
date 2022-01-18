@@ -1,0 +1,30 @@
+.child {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+@mixin childText($color) {
+  color: $color;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.fail {
+  @include childText(red);
+}
+
+.warning {
+  @include childText(#ffcc00);
+}
+
+.success {
+  @include childText(green);
+}
+
+.priceLabel {
+  @include childText(#151515);
+}
