@@ -9,38 +9,7 @@ function Home({ data }) {
   return (
     <>
       <Heading title="Online shopping" />
-      <Body>
-        <div>
-          {data && data.map((el) => (
-            <div key={el.id}>
-              <span>
-                {el.id}
-              </span>
-              <span>
-                {el.category}
-              </span>
-              <span>
-                {el.image}
-              </span>
-              <span>
-                {el.price}
-              </span>
-              <span>
-                {el.rating.count}
-              </span>
-              <span>
-                {el.rating.rate}
-              </span>
-              <span>
-                {el.title}
-              </span>
-              <span>
-                {el.description}
-              </span>
-            </div>
-          ))}
-        </div>
-      </Body>
+      <Body data={data} />
       <Footer />
     </>
   );
