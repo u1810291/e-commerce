@@ -1,7 +1,9 @@
 import React from 'react';
 
-export default () => (
-  <div>
-    Admin
-  </div>
-);
+export default function Admin() {
+  return (
+    <div>
+      Admin
+    </div>
+  );
+}
